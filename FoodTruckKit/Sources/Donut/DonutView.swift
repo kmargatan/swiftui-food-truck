@@ -6,6 +6,7 @@ A donut view.
 */
 
 import SwiftUI
+import FullStory
 
 public let donutThumbnailSize: Double = 128
 
@@ -50,6 +51,7 @@ public struct DonutView: View {
             .aspectRatio(1, contentMode: .fit)
             .compositingGroup()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .fsUnmask()
         }
     }
 }

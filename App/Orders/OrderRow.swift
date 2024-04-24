@@ -7,6 +7,7 @@ The order row view.
 
 import SwiftUI
 import FoodTruckKit
+import FullStory
 
 struct OrderRow: View {
     var order: Order
@@ -25,6 +26,7 @@ struct OrderRow: View {
                 .overlay {
                     iconShape.strokeBorder(.quaternary, lineWidth: 0.5)
                 }
+//                .fsUnmask()
             
             Text(order.id)
         }

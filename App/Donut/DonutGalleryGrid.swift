@@ -7,6 +7,7 @@ The grid view used in the DonutGallery.
 
 import SwiftUI
 import FoodTruckKit
+import FullStory
 
 struct DonutGalleryGrid: View {
     var donuts: [Donut]
@@ -78,11 +79,15 @@ struct DonutGalleryGrid: View {
                     }
                 }
                 .buttonStyle(.plain)
+                .fsAddClass(donut.name)
+                .fsAddClass("DonutGrid")
             }
         }
         .padding()
-    }
+        .fsUnmask()
+    } // .onAppear(perform: FS.page(withName: "DonutGrid").start())
 }
+
 
 struct DonutGalleryGrid_Previews: PreviewProvider {
     struct Preview: View {

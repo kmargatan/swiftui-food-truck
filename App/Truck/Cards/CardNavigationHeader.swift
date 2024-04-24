@@ -6,6 +6,7 @@ The header view for the cards in the Truck view.
 */
 
 import SwiftUI
+import FullStory
 
 struct CardNavigationHeader<Label: View>: View {
     var panel: Panel
@@ -31,6 +32,7 @@ struct CardNavigationHeader<Label: View>: View {
         }
         .buttonStyle(.borderless)
         .labelStyle(.cardNavigationHeader)
+        .fsAddClass("CardHeader")
     }
 }
 

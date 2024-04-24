@@ -7,6 +7,7 @@ The donut gallery view.
 
 import SwiftUI
 import FoodTruckKit
+import FullStory
 
 struct DonutGallery: View {
     @ObservedObject var model: FoodTruckModel
