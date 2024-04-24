@@ -6,6 +6,8 @@
 	<dict>
 		<key>OrgId</key>
 		<string>11S5H9</string>
+		<key>ScanAsynchronously</key>
+		<true/>
 		<key>SwiftUIEnabled</key>
 		<true/>
 		<key>SwiftUISelectorVersion</key>
